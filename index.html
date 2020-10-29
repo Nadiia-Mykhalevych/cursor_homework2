@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <h2 class="center">Обмін валют</h2>
+        <table>
+            <tr>
+                <th>Купівля</th>
+                <th>Валюта</th>
+                <th>Продаж</th>
+            </tr>
+            <tr>
+                <td id="usdBuy"></td>
+                <td>USD</td>
+                <td id="usdSell"></td>
+            </tr>
+            <tr>
+                <td id="eurBuy"></td>
+                <td>EUR</td>
+                <td id="eurSell"></td>
+            </tr>
+            <tr>
+                <td id="plnBuy"></td>
+                <td>PLN</td>
+                <td id="plnSell"></td>
+            </tr>
+        </table>
+
+        <div class="center">
+            <label for="curSelect">Виберіть валюту:</label>
+            <select id="curSelect">
+                <option id="usd">USD</option>
+                <option id="eur">EUR</option>
+                <option id="pln">PLN</option>
+            </select>
+        </div>
+        <div class="center">
+            <label for="sum">Введіть суму:</label>
+            <input type="text" id="sum"/>
+        </div>
+        <div class="center">
+            <button id="btnSell">Продати</button>
+            <button id="btnBuy">Купити</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
